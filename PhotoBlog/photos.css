@@ -1,0 +1,60 @@
+
+.image-container {
+    position: relative;
+    width: 30%;
+    margin: calc(5%/6);
+    display: inline-block;
+}
+
+
+.image-container img {
+    /* Here the parent is 'image-container' and 
+    we want the image to fit each div, hence 100% of parent width */
+    width: 100%;
+    opacity: 1;
+}
+
+.image-container h3 {
+    position: absolute;
+    top: 50%;
+    /*center vertically*/
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    width: 100%;
+    /* Ensure text is within image width */
+    margin: 0;
+    /* Remove default margins */
+}
+
+/*  We want to apply styles for 'hover' as a broader effect 
+which contains img and h3 within the same container
+By using this selector,
+any hover over the container will trigger the effects on the image,
+making it part of a cohesive group action.*/
+.image-container:hover img{
+    border-color: black;
+    box-shadow: 1em 1em 1em -0.5em black;
+    transform: translateY(-1em);
+    opacity: 0.5;
+}
+
+.image-container:hover h3 {
+    opacity: 1;
+}
+
+nav {
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    border-bottom: 2px solid #a69f9f;
+    width:30%;
+    margin-left: calc(10%/6);
+    margin-bottom: calc(10%/6);
+    padding: 20px 0px 20px 0px;
+    font-size: 25px;
+    color: #082013;
+}

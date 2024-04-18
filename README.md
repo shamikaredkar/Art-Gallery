@@ -1,4 +1,4 @@
-![Gameplay Demo](https://github.com/shamikaredkar/Ping-Pong-Game/blob/main/Preview.gif)
+![ArtGallery Demo](https://github.com/shamikaredkar/ArtGallery/blob/main/ArtGalleryPreview.gif)
 # ArtGallery
 
 ## Introduction
